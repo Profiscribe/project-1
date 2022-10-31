@@ -1,0 +1,427 @@
+.products__pretitle {
+    
+    text-align: center;
+    margin-bottom: 15px;
+    color: #FFA5BA;
+    @include font('Titan One', 400, 20px, 1.17, none, none);
+    text-transform: uppercase;
+
+
+    @media screen and (min-width: 768px) {
+        @include font('Titan One', 400, 26px, 1.15, none, none);
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        @include font('Titan One', 400, 30px, 1.13, none, 0.04em);
+    }
+
+
+
+}
+
+.products {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.products__title {
+    
+    margin-bottom: 148px;
+
+    text-align: center;
+    color: #D41443;
+    @include font('Titan One', 400, 34px, 1.14, none, 0.04em);
+
+    @media screen and (min-width: 768px) {
+        @include font('Titan One', 400, 48px, 1.14, none, 0.04em);
+        margin-bottom: 158px;
+       
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font('Titan One', 400, 58px, 1.13, none, 0.06em);
+        margin-bottom: 281px;
+        
+    }
+
+
+}
+
+
+
+.products__card-one {
+    width: 100%;
+        height: 489px;
+        background-color: #FFB8CA;
+        border-radius: 24px;
+        border: none;
+        
+        align-items: center;
+    
+        position: relative;
+        padding-top: 160px;
+    
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    
+        @include mobile {
+            width: 480px;
+        }
+
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 473px;
+        padding-top: 118px;
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 535px;
+        padding-top: 165px;
+
+    }
+
+
+}
+
+
+.products__subtitle-one::before {
+    content: "";
+    background-image: url("../images/product/mobile/cream-228.png");
+    width: 280px;
+    display: block;
+    height: 280px;
+    margin-top: 11px;
+    position: absolute;
+    top: -160px;
+    
+    margin-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/product/tablet/cream-224.png");
+        width: 224px;
+        height: 224px;
+        margin-top: 20px;
+        top: -160px;
+        left: 0;
+        margin-bottom: 70px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url("../images/product/desktop/cream-368.png");
+        width: 368px;
+        height: 394px;
+
+
+        top: -280px;
+        left: 0;
+        margin-bottom: 70px;
+    }
+
+
+}
+
+
+
+.products__subtitle-two::before {
+    content: "";
+    background-image: url("../images/product/mobile/coffee-280.png");
+    width: 280px;
+    display: block;
+    height: 280px;
+
+    position: absolute;
+    top: -146px;
+
+    
+    margin-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/product/tablet/coffee-224.png");
+        width: 224px;
+        height: 224px;
+        margin-top: 20px;
+        top: -160px;
+        left: 0;
+        margin-bottom: 70px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url("../images/product/desktop/coffee-368.png");
+        width: 368px;
+        height: 394px;
+        margin-top: 20px;
+        top: -280px;
+        left: 0;
+        margin-bottom: 70px;
+    }
+
+}
+
+.products__text::before {
+    content: "...";
+    width: 26px;
+    display: block;
+    height: 6px;
+
+    position: absolute;
+    font-size: 50px;
+    top: 175px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    
+
+    
+
+    @media screen and (min-width: 768px) {
+        top: 125px;
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        
+      top: 185px;
+    }
+
+
+}
+
+.products__subtitle-three::before {
+    content: "";
+    background-image: url("../images/product/mobile/milkshakes-280.png");
+    
+        
+    width: 280px;
+    display: block;
+    height: 280px;
+    
+    position: absolute;
+    top: -146px;
+    
+    
+    margin-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/product/tablet/milkshakes-224.png");
+        width: 224px;
+        height: 224px;
+        margin-top: 20px;
+        top: -160px;
+        left: 0;
+        margin-bottom: 70px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url("../images/product/desktop/milkshakes-368.png");
+        width: 368px;
+        height: 394px;
+
+        top: -280px;
+        left: 0;
+        margin-bottom: 250px;
+    }
+}
+
+
+
+.products__card-two {
+    width: 100%;
+    height: 489px;
+    background-color: #F0D1A5;
+    border-radius: 24px;
+    border: none;
+        align-items: center;
+
+    position: relative;
+    padding-top: 160px;
+
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    @include mobile {
+        width: 480px;
+    }
+        @media screen and (min-width: 768px) {
+            width: 224px;
+            height: 473px;
+            padding-top: 118px;
+            padding-bottom: 40px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 368px;
+            height: 535px;
+            padding-top: 165px;
+    
+        }
+
+}
+
+.products__card-three {
+    width: 100%;
+        height: 489px;
+        background-color: #C2E297;
+        border-radius: 24px;
+        border: none;
+        align-items: center;
+    
+        position: relative;
+        padding-top: 160px;
+    
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    
+        @include mobile {
+            width: 480px;
+        }
+
+
+        @media screen and (min-width: 768px) {
+            width: 224px;
+            height: 473px;
+            padding-top: 118px;
+            padding-bottom: 40px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 368px;
+            height: 535px;
+            padding-top: 165px;
+    
+        }
+}
+
+.products__subtitle-one,
+.products__subtitle-two,
+.products__subtitle-three {
+    text-align: center;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+
+    @include font('Titan One', 400, 20px, 1.15, none, 0.04em);
+    color: white;
+
+    @media screen and (min-width: 768px) {
+        @include font('Titan One', 400, 20px, 1.14, none, 0.04em);
+        ;
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font('Titan One', 400, 30px, 1.14, none, 0.04em);
+
+    }
+
+
+}
+
+.wrap {
+
+
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 140px;
+        
+    @media screen and (min-width: 768px) {
+                
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    @include desktop {
+        gap: 32px;
+    }
+
+}
+
+.products__text {
+    width: 200px;
+    height: 124px;
+    text-align: center;
+    margin-bottom: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include font('DM Sans', 700, 14px, 1.5, none, 0.04em);
+    color: white;
+
+    @media screen and (min-width: 768px) {
+        @include font('DM Sans', 400, 14px, 1.76, none, 0.04em);
+        width: 160px;
+        height: 150px;
+       
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font('DM Sans', 400, 16px, 1.75, none, 0.04em);
+        width: 245px;
+        height: 106px;
+        margin-bottom: 60px;
+        
+    }
+
+}
+
+.product__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    &:hover,
+        &:focus {
+            animation: product__button 1s;
+            box-shadow: 0 0 0 2em transparent;
+        }
+    
+        @keyframes product__button {
+            0% {
+                box-shadow: 0 0 0 0 #fff;
+            }
+        }
+    
+
+}
+.product__icon {
+    fill: $accent-color;
+    width: 11px;
+    height: 11px;
+}
+
+.test {
+    display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+}

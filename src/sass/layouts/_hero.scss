@@ -1,0 +1,461 @@
+.hero-section {
+  background-color: $hero-bg;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding-top: 136px;
+  padding-bottom: 158px;
+
+  @include table {
+padding-top: 102px;
+    padding-bottom: 56px;
+    }
+
+    @include desktop {
+    padding-top: 147px;
+      padding-bottom: 84px;
+    }
+}
+
+.hero__img-ellipse {
+  position: absolute;
+  bottom: -83px;
+  right: -62px;
+  z-index: -2;
+  min-width: 346px;
+  max-width: 346px;
+
+  @include table {
+    bottom: -16px;
+    right: 185px;
+    min-width: 335px;
+    max-width: 335px;
+  }
+
+  @include desktop {
+    bottom: -8px;
+    right: 149px;
+    min-width: 534px;
+    max-width: 534px;
+  }
+}
+
+.hero__img-ice {
+  position: absolute;
+  bottom: -158px;
+  right: 32px;
+  z-index: -1;
+  width: 171px;
+  height: 410px;
+
+  @include table {
+    bottom: -56px;
+    right: 303px;
+    width: 143px;
+    height: 336px;
+  }
+
+  @include desktop {
+    bottom: -84px;
+    right: 328px;
+    width: 236px;
+    height: 557px;
+  }
+}
+
+.hero__img-milk{
+  display: none;
+
+  @include table {
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    left: 32px;
+      width: 152px;
+      height: 154px;
+    }
+
+    @include desktop {
+      bottom: -28px;
+      left: 16px;
+      width: 213px;
+      height: 216px;
+    }
+
+}
+
+.hero__img-girl {
+  display: none;
+
+  @include table {
+    display: block;
+    position: absolute;
+    bottom: -56px;
+    right: 32px;
+    width: 190px;
+    height: 150px;
+  }
+
+  @include desktop {
+    bottom: -84px;
+   right: 16px;
+    width: 304px;
+    height: 241px;
+  }
+
+}
+
+
+.hero {
+  position: relative;
+  // padding-top: 136px;
+  // padding-bottom: 158px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+
+  // @include table {
+  //   padding-top: 102px;
+  //   padding-bottom: 56px;
+  //   background-image: url(../images/hero/desktop/moloko-213.png),
+  //     url(../images/hero/desktop/girl-304.png);
+  //   background-position: bottom 16px left 32px, bottom 0 right 32px;
+  //   background-size: 152px, 190px 150px;
+
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     screen and (min-resolution: 192dpi),
+  //     screen and (min-resolution: 2dppx) {
+  //     & {
+  //       background-image: url(../images/hero/desktop/moloko-426.png),
+  //         url(../images/hero/desktop/girl-608.png);
+  //     }
+  //   }
+  // }
+
+  // @include desktop {
+  //   max-width: 1200px;
+  //   padding-top: 147px;
+  //   padding-bottom: 84px;
+  //   background-image: url(../images/hero/desktop/girl-304.png),
+  //     url(../images/hero/desktop/moloko-213.png);
+  //   background-position: bottom 0 right 16px, bottom 60px left 16px;
+  //   background-size: 304px 241px, 213px 216px;
+
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     screen and (min-resolution: 192dpi),
+  //     screen and (min-resolution: 2dppx) {
+  //     & {
+  //       background-image: url(../images/hero/desktop/girl-608.png),
+  //         url(../images/hero/desktop/moloko-426.png);
+  //     }
+  //   }
+  // }
+}
+
+.hero__box {
+  display: flex;
+  justify-content: space-between;
+  @include table {
+    margin-bottom: 61px;
+  }
+
+  @include desktop {
+    margin-bottom: 108px;
+  }
+}
+
+.hero__title {
+  font-family: 'Titan One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 96.5%;
+  text-transform: uppercase;
+  color: $accent-color;
+  width: 218px;
+
+  @include table {
+    font-size: 34px;
+    line-height: 90.5%;
+    width: 162px;
+  }
+
+  @include desktop {
+    font-size: 58px;
+    line-height: 90.5%;
+    letter-spacing: 0.04em;
+    width: 277px;
+  }
+}
+
+.hero__span {
+  display: block;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $text-color;
+
+  @include table {
+    font-size: 22px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+  }
+
+  @include desktop {
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.hero__buttons-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+  gap: 8px;
+
+  @include desktop {
+    gap: 12px;
+  }
+}
+
+.hero__button {
+  width: 62px;
+  display: block;
+  height: 24px;
+  flex-direction: row;
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  color: $text-color;
+  background-color: $accent-color;
+  border: none;
+  border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    animation: hero__button 1s;
+    box-shadow: 0 0 0 2em transparent;
+  }
+
+  @keyframes hero__button {
+    0% {
+      box-shadow: 0 0 0 0 #ffa5ba;
+    }
+  }
+
+  @include desktop {
+    width: 107px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  &--invers {
+    width: 83px;
+    height: 24px;
+    color: $accent-color;
+    background-color: $text-color;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      animation: hero__button--invers 1s;
+      box-shadow: 0 0 0 2em transparent;
+    }
+
+    @keyframes hero__button--invers {
+      0% {
+        box-shadow: 0 0 0 0 #ffa5ba;
+      }
+    }
+
+    @include desktop {
+      width: 138px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 1.28;
+    }
+  }
+}
+
+.number {
+  display: none;
+
+  @include table {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 51px;
+  }
+
+  @include desktop {
+    width: 92px;
+  }
+}
+
+.number__item {
+  display: block;
+  width: 51px;
+  height: 44px;
+  background-image: url(../images/hero/tablet/ellipse-16.png);
+  background-position: top 0 right 0;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+
+  @include desktop {
+    width: 92px;
+    height: 67px;
+    background-image: url(../images/hero/tablet/ellipse-16.png);
+    background-position: top 0 right 0;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+  }
+}
+
+.number__span {
+  display: block;
+  padding-right: 10px;
+  font-family: 'Titan One';
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-align: right;
+  color: $accent-color;
+
+  @include desktop {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+
+.number__text {
+  padding-right: 10px;
+  font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  color: $text-color;
+
+  &--mini {
+    padding-right: 8px;
+  }
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.13;
+  }
+}
+
+.number__span {
+  display: block;
+  padding-right: 10px;
+  font-family: 'Titan One';
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-align: right;
+  color: $accent-color;
+
+  @include desktop {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+
+.number__text {
+  padding-right: 10px;
+  font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  color: $text-color;
+
+  &--mini {
+    padding-right: 0;
+  }
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.13;
+  }
+}
+
+.hero__text {
+  display: none;
+
+  @include table {
+    display: block;
+    width: 114px;
+    margin-left: 152px;
+    margin-bottom: 7px;
+
+    font-family: 'DM Sans';
+    font-size: 8px;
+    line-height: 150%;
+    color: $text-color;
+  }
+
+  @include desktop {
+    margin-left: 213px;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 140%;
+    width: 200px;
+  }
+}
+
+.gallery__button-arrow {
+  display: none;
+  cursor: pointer;
+    &:hover,
+    &:focus {
+      animation: gallery__button-arrow 1s;
+      box-shadow: 0 0 0 2em transparent;
+    }
+
+    @keyframes gallery__button-arrow {
+      0% {
+        box-shadow: 0 0 0 0 #fff;
+      }
+    }
+
+  @include table {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-left: 152px;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  @include desktop {
+    margin-left: 213px;
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.gallery__icon {
+  fill: $accent-color;
+  width: 5px;
+  height: 5px;
+
+  @include desktop {
+    width: 8px;
+    height: 8px;
+  }
+}
